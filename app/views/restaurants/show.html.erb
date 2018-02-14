@@ -1,0 +1,8 @@
+<div class="container">
+  <h2><%= @restaurant.name %></h2>
+  <p><%= @restaurant.address %></p>
+
+  <%= button_to "HomePage" , restaurants_path, method: :get  %>
+</div>
+
+<%= button_to "+ Add Review to this restaurant", new_restaurant_review_path(@restaurant), method: :get  %>
